@@ -1,0 +1,29 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const posts = await getCollection('blog', ({ data }) => !data.draft);
+posts.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+---
+
+<BaseLayout title="Strona główna" description="Portal o budownictwie pasywnym, izolacji PiR i energooszczędnych rozwiązaniach">
+  <section class="hero">
+    <h1>Budownictwo Pasywne <span class="highlight">z PiR</span></h1>
+    <p class="lead">Wiedza, koszty i praktyczne rozwiązania dla Twojego energooszczędnego domu</p>
+  </section>
+
+  <section class="featured">
+    <h2>Najnowsze artykuły</h2>
+    <div class="posts-grid">
+      {posts.slice(0, 6).map((post) => (
+        <article class="post-card">
+          <a href={`/blog/${post.slug}`}>
+            <h3>{post.data.title}</h3>
+            <p>{post.data.description}</p>
+            <time>{new Date(post.data.date).toLocaleDateString('pl-PL')}</time>
+          </a>
+        </article>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

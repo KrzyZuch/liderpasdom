@@ -1,0 +1,267 @@
+<!DOCTYPE html><html lang="pl"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Oblicz zapotrzebowanie na ciepło dla domu z płyt PIR. Wzory, współczynniki U i przykłady dla domów 100m²."><title>Kalkulator Zapotrzebowania na Energię dla Domu PIR | Lider Pasdom</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"><style>:root{--color-primary: #064e3b;--color-accent: #10b981;--color-text: #1f2937;--color-bg: #ffffff;--color-muted: #f3f4f6}*{margin:0;padding:0;box-sizing:border-box}body{font-family:Inter,-apple-system,BlinkMacSystemFont,sans-serif;color:var(--color-text);line-height:1.6;background:var(--color-bg)}header{background:var(--color-primary);padding:1rem 2rem;position:sticky;top:0;z-index:100}nav{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center}.logo{font-size:1.5rem;font-weight:700;color:#fff;text-decoration:none}.logo span{color:var(--color-accent)}nav ul{display:flex;gap:2rem;list-style:none}nav a{color:#ffffffe6;text-decoration:none;transition:color .2s}nav a:hover{color:#fff}main{max-width:1200px;margin:0 auto;padding:2rem}.hero{text-align:center;padding:4rem 1rem;background:linear-gradient(135deg,var(--color-muted) 0%,#e5e7eb 100%);border-radius:1rem;margin-bottom:3rem}.hero h1{font-size:3rem;margin-bottom:1rem;color:var(--color-primary)}.hero .highlight{color:var(--color-accent)}.lead{font-size:1.25rem;color:#6b7280;max-width:600px;margin:0 auto}.featured h2{font-size:2rem;margin-bottom:1.5rem;color:var(--color-primary)}.posts-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:1.5rem}.post-card{background:var(--color-bg);border:1px solid #e5e7eb;border-radius:.75rem;overflow:hidden;transition:box-shadow .2s,transform .2s}.post-card:hover{box-shadow:0 10px 25px #0000001a;transform:translateY(-2px)}.post-card a{display:block;padding:1.5rem;color:inherit;text-decoration:none}.post-card h3{font-size:1.25rem;margin-bottom:.5rem;color:var(--color-primary)}.post-card p{color:#6b7280;margin-bottom:1rem;font-size:.95rem}.post-card time{font-size:.875rem;color:#9ca3af}footer{text-align:center;padding:2rem;background:var(--color-muted);margin-top:4rem;color:#6b7280}@media(max-width:768px){.hero h1{font-size:2rem}.posts-grid{grid-template-columns:1fr}nav ul{gap:1rem;font-size:.9rem}}
+.post[data-astro-cid-7jjqptxk]{max-width:800px;margin:0 auto}.post-header[data-astro-cid-7jjqptxk]{margin-bottom:2rem;padding-bottom:1rem;border-bottom:1px solid #e5e7eb}.post-header[data-astro-cid-7jjqptxk] h1[data-astro-cid-7jjqptxk]{font-size:2.5rem;color:var(--color-primary);margin-bottom:1rem}.meta[data-astro-cid-7jjqptxk]{display:flex;align-items:center;gap:1rem;color:#6b7280}.tags[data-astro-cid-7jjqptxk]{display:flex;gap:.5rem}.tag[data-astro-cid-7jjqptxk]{background:var(--color-muted);padding:.25rem .75rem;border-radius:9999px;font-size:.875rem;color:var(--color-primary)}.post-content[data-astro-cid-7jjqptxk]{line-height:1.8}.post-content[data-astro-cid-7jjqptxk] h2[data-astro-cid-7jjqptxk]{font-size:1.75rem;margin:2rem 0 1rem;color:var(--color-primary)}.post-content[data-astro-cid-7jjqptxk] h3[data-astro-cid-7jjqptxk]{font-size:1.25rem;margin:1.5rem 0 .75rem}.post-content[data-astro-cid-7jjqptxk] p[data-astro-cid-7jjqptxk]{margin-bottom:1.5rem}.post-content[data-astro-cid-7jjqptxk] ul[data-astro-cid-7jjqptxk],.post-content[data-astro-cid-7jjqptxk] ol[data-astro-cid-7jjqptxk]{margin-bottom:1.5rem;padding-left:1.5rem}.post-content[data-astro-cid-7jjqptxk] li[data-astro-cid-7jjqptxk]{margin-bottom:.5rem}.post-content[data-astro-cid-7jjqptxk] blockquote[data-astro-cid-7jjqptxk]{border-left:4px solid var(--color-accent);padding-left:1rem;margin:1.5rem 0;font-style:italic;color:#6b7280}
+</style></head> <body> <header> <nav> <a href="/" class="logo">🏠 Lider<span>Pasdom</span></a> <ul> <li><a href="/">Strona główna</a></li> <li><a href="/blog">Blog</a></li> <li><a href="/o-nas">O nas</a></li> </ul> </nav> </header> <main>  <article class="post" data-astro-cid-7jjqptxk> <header class="post-header" data-astro-cid-7jjqptxk> <h1 data-astro-cid-7jjqptxk>Kalkulator Zapotrzebowania na Energię dla Domu PIR</h1> <div class="meta" data-astro-cid-7jjqptxk> <time datetime="2026-03-24T00:00:00.000Z" data-astro-cid-7jjqptxk> 24 marca 2026 </time> <div class="tags" data-astro-cid-7jjqptxk> <span class="tag" data-astro-cid-7jjqptxk>budownictwo-pasywne</span><span class="tag" data-astro-cid-7jjqptxk>pir</span><span class="tag" data-astro-cid-7jjqptxk>energia</span><span class="tag" data-astro-cid-7jjqptxk>kalkulator</span><span class="tag" data-astro-cid-7jjqptxk>ogrzewanie</span> </div> </div> </header> <div class="post-content" data-astro-cid-7jjqptxk> <h1 id="kalkulator-zapotrzebowania-na-energię-dla-domu-pir">Kalkulator Zapotrzebowania na Energię dla Domu PIR</h1>
+<h2 id="wzory-i-przykłady-obliczeń">Wzory i przykłady obliczeń</h2>
+<hr>
+<h2 id="parametry-wejściowe">Parametry Wejściowe</h2>
+<h3 id="parametry-geometryczne-budynku">Parametry Geometryczne Budynku</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Parametr</th><th>Symbol</th><th>Jednostka</th><th>Opis</th></tr></thead><tbody><tr><td>Długość</td><td>L</td><td>m</td><td>Wymiar zewnętrzny budynku</td></tr><tr><td>Szerokość</td><td>W</td><td>m</td><td>Wymiar zewnętrzny budynku</td></tr><tr><td>Wysokość</td><td>H</td><td>m</td><td>Wysokość w świetle ścian</td></tr><tr><td>Powierzchnia podłogi</td><td>A_f</td><td>m²</td><td>A_f = L × W</td></tr><tr><td>Powierzchnia ścian</td><td>A_w</td><td>m²</td><td>A_w = 2×(L+W)×H</td></tr><tr><td>Powierzchnia dachu</td><td>A_r</td><td>m²</td><td>A_r = L × W</td></tr></tbody></table>
+<h3 id="parametry-izolacji-pir">Parametry Izolacji PIR</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Parametr</th><th>Symbol</th><th>Wartość</th><th>Jednostka</th></tr></thead><tbody><tr><td>λ PIR</td><td>λ_PIR</td><td>0,022</td><td>W/(m·K)</td></tr><tr><td>Grubość ścian</td><td>d_w</td><td>100-200</td><td>mm</td></tr><tr><td>Grubość dachu</td><td>d_r</td><td>150-250</td><td>mm</td></tr><tr><td>Grubość podłogi</td><td>d_f</td><td>80-150</td><td>mm</td></tr></tbody></table>
+<h3 id="strefy-klimatyczne-polski">Strefy Klimatyczne Polski</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Strefa</th><th>T_zew</th><th>Przykładowe miasta</th></tr></thead><tbody><tr><td>I</td><td>-16°C</td><td>Szczecin, Zielona Góra</td></tr><tr><td>II</td><td>-18°C</td><td>Wrocław, Opole, Poznań</td></tr><tr><td>III</td><td>-20°C</td><td>Warszawa, Łódź, Kielce</td></tr><tr><td>IV</td><td>-22°C</td><td>Kraków, Rzeszów, Lublin</td></tr><tr><td>V</td><td>-24°C</td><td>Suwałki, Białystok</td></tr></tbody></table>
+<blockquote>
+<p>⚠️ <strong>Nowa Ruda (tereny górskie):</strong> T_zew = -22°C (Strefa IV)</p>
+</blockquote>
+<hr>
+<h2 id="wzory-obliczeniowe">Wzory Obliczeniowe</h2>
+<h3 id="współczynnik-przenikania-u">Współczynnik Przenikania U</h3>
+<p><strong>Dla PIR (uproszczony):</strong></p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span>U = λ / d [W/(m²·K)]</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>gdzie: λ = 0,022 W/(m·K) dla PIR</span></span></code></pre>
+<p><strong>Pełny wzór:</strong></p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span>U = 1 / (R_si + d/λ + R_se) [W/(m²·K)]</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>gdzie:</span></span>
+<span class="line"><span>R_si = opór powierzchni wewnętrznej</span></span>
+<span class="line"><span>R_se = opór powierzchni zewnętrznej</span></span></code></pre>
+<h3 id="tabela-współczynników-u-dla-pir">Tabela współczynników U dla PIR:</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Grubość PIR</th><th>U (ściana)</th><th>U (dach)</th></tr></thead><tbody><tr><td>80 mm</td><td>0,275</td><td>0,275</td></tr><tr><td>100 mm</td><td>0,220</td><td>0,220</td></tr><tr><td>120 mm</td><td>0,183</td><td>0,183</td></tr><tr><td>150 mm</td><td>0,147</td><td>0,147</td></tr><tr><td>200 mm</td><td>0,110</td><td>0,110</td></tr><tr><td>250 mm</td><td>-</td><td>0,088</td></tr></tbody></table>
+<hr>
+<h2 id="przykładowe-obliczenia---dom-100m">Przykładowe Obliczenia - Dom 100m²</h2>
+<h3 id="dane">Dane:</h3>
+<ul>
+<li>Dom parterowy 10m × 10m = 100m²</li>
+<li>Wysokość ścian: 2,5m</li>
+<li>Grubość PIR: 150mm (ściany), 200mm (dach)</li>
+<li>Lokalizacja: Kotlina Kłodzka (T_zew = -22°C)</li>
+<li>T_wewn = +20°C</li>
+</ul>
+<h3 id="obliczenia">Obliczenia:</h3>
+<p><strong>Straty przez ściany:</strong></p>
+<ul>
+<li>Powierzchnia ścian: 2×(10+10)×2,5 = 100m²</li>
+<li>U = 0,147 W/(m²·K)</li>
+<li>ΔT = 20 - (-22) = 42K</li>
+<li>Straty = 100 × 0,147 × 42 = <strong>617 W</strong></li>
+</ul>
+<p><strong>Straty przez dach:</strong></p>
+<ul>
+<li>Powierzchnia dachu: 100m²</li>
+<li>U = 0,110 W/(m²·K)</li>
+<li>Straty = 100 × 0,110 × 42 = <strong>462 W</strong></li>
+</ul>
+<p><strong>Straty przez podłogę:</strong></p>
+<ul>
+<li>Powierzchnia: 100m²</li>
+<li>U = 0,110 W/(m²·K) (150mm PIR)</li>
+<li>Straty = 100 × 0,110 × 42/2* = <strong>231 W</strong></li>
+</ul>
+<p>*Współczynnik 1/2 dla podłogi (grunt częściowo izoluje)</p>
+<h3 id="suma-1310-w--131-kw">SUMA: <strong>1310 W = 1,31 kW</strong></h3>
+<hr>
+<h2 id="porównanie-z-domem-tradycyjnym">Porównanie z domem tradycyjnym</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Typ budynku</th><th>Zapotrzebowanie na ciepło</th></tr></thead><tbody><tr><td><strong>Dom PIR (150mm)</strong></td><td><strong>~15 kWh/m²/rok</strong></td></tr><tr><td>Dom murowany (30cm styropian)</td><td>~50-80 kWh/m²/rok</td></tr><tr><td>Dom tradycyjny (bez izolacji)</td><td>~150-200 kWh/m²/rok</td></tr></tbody></table>
+<hr>
+<h2 id="jak-obniżyć-zapotrzebowanie">Jak obniżyć zapotrzebowanie?</h2>
+<ol>
+<li><strong>Zwiększ grubość PIR</strong> - 200mm zamiast 150mm</li>
+<li><strong>Eliminuj mostki termiczne</strong> - szczególna uwaga przy połączeniach</li>
+<li><strong>Okna trójszybowe</strong> - Uw &#x3C; 0,8 W/(m²·K)</li>
+<li><strong>Rekuperacja</strong> - odzysk ciepła z wentylacji</li>
+<li><strong>Kompensacja solarna</strong> - zyski od słońca przez okna</li>
+</ol>
+<hr>
+<h2 id="wniosek">Wniosek</h2>
+<p><strong>Dom z płyt PIR 150mm zużywa nawet 3-10x mniej energii niż dom tradycyjny!</strong></p>
+<p>Przy cenie prądu ~1,50 zł/kWh roczne koszty ogrzewania domu 100m² to zaledwie:</p>
+<ul>
+<li><strong>Dom PIR:</strong> ~2250 zł/rok</li>
+<li><strong>Dom tradycyjny:</strong> ~7500-15000 zł/rok</li>
+</ul>
+<hr>
+<h2 id="normy-i-źródła">Normy i Źródła</h2>
+<ul>
+<li>PN-EN 12831 - Obliczanie zapotrzebowania na ciepło</li>
+<li>PN-EN ISO 10211 - Mostki termiczne</li>
+<li>Warunki Techniczne 2021</li>
+</ul> </div> </article>  </main> <footer> <p>2026 LiderPasdom.pl - Portal o budownictwie pasywnym</p> </footer> </body></html> 

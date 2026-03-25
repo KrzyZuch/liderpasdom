@@ -1,0 +1,38 @@
+---
+import '../styles/global.css';
+interface Props {
+  title: string;
+  description?: string;
+}
+const { title, description = 'Portal o budownictwie pasywnym i PiR' } = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <title>{title} | Lider Pasdom</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="/" class="logo">🏠 Lider<span>Pasdom</span></a>
+        <ul>
+          <li><a href="/">Strona główna</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/o-nas">O nas</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer>
+      <p>2026 LiderPasdom.pl - Portal o budownictwie pasywnym</p>
+    </footer>
+  </body>
+</html>

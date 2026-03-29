@@ -6,7 +6,7 @@ tags: ['budownictwo-pasywne', 'pir']
 ---
 
 description: "Poznaj innowacyjne panele PIR ze styropianem. Izolacja elewacji 2025: zalety, koszty, montaż i oszczędności energetyczne w domach pasywnych."
-pubDate: 2026-03-21
+date: 2026-03-21
 author: AI Research Team
 tags: [dom-pasywny, pir, izolacja, budowa]
 ---

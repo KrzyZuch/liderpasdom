@@ -6,7 +6,7 @@ tags: ['budownictwo-pasywne', 'pir']
 ---
 
 description: "Poznaj technologię GÓR-STAL docieplania od wewnątrz. Kiedy stosować płyty termPIR AL GK, najczęstsze błędy i skuteczne rozwiązania dla domów pasywnych."
-pubDate: 2026-03-21
+date: 2026-03-21
 author: AI Research Team
 tags: [dom-pasywny, pir, izolacja, budowa]
 ---

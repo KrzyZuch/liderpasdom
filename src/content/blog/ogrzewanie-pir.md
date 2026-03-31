@@ -1,7 +1,7 @@
 ---
-title: Ogrzewanie domu PIR 2026 - Kompletne porównanie źródeł ciepła
-description: Poznaj najlepsze systemy ogrzewania dla domów z płyt PIR 20cm. Porównanie pomp ciepła, pelletu, gazu i innych rozwiązań z kosztami i dotacjami na 2026 rok.
-date: 2026-03-24
+title: "Ogrzewanie domu PIR 2026 - Kompletne porównanie źródeł ciepła"
+date: 2026-03-27
+description: "Poznaj najlepsze systemy ogrzewania dla domów z płyt PIR 20cm. Porównanie pomp ciepła, pelletu, gazu i innych rozwiązań z kosztami i dotacjami na 2026 rok."
 tags: [ogrzewanie, PIR, pompa ciepła, pellet, dotacje 2026]
 category: instalacje
 ---
